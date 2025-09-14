@@ -1,47 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registaration Form</title>
 </head>
 <body>
-    <form>
-        <table align="center" bgcolor="pink" cellpadding="10px" cellspacing="10px">
-        <caption>
-            <h2> Registration form </h2>
-        </caption>
-        <tr>
-            <td><Label> First Name</Label></td>                 
-            <td><input type="text"></td>                
-            <td><Label>Last Name</Label></td> 
-            <td><input type="text"></td>
+   <form name="form0" action="http://www.NavyaForm.com" method="post">
+     <Table border="0px" align="center" bgcolor="eef1ff" cellspacing="3px" cellpadding="5px">
+        <caption><h3> Registaration Form</h3></caption>
+        <tr >
+            <td>
+                <label for="id1" >First Name</label>
+           </td>
+            <td>
+                <label for="id2">Last Name</label>
+           </td>
         </tr>
-        <br>
         <tr>
-            <td><Label>Birthday</Label></td>        
-               <td><input type="date"></td>                 <td><label>Gender </label></td> 
-                                                            <td> Male <input type="radio" value ="Male"></td>
-                                             <td>Female <input type="radio" value ="Female"></td>
-                                             <td> Others <input type="radio" value="Others"></td>
-       </tr>
-          <tr>
-            <td> Enter Degree:
-   <select>
-    <option value="Select Degree">Select Degree</option>
-    <option value="UG"> UG </option>
-    <option value="PG"> PG </option>
-    <option value="PHD"> PHD </option>
-   </select></td>
-          </tr>              
-          <br>
-        <tr>
-            <td><Label>Email</Label></td>           
-              <td><Input type="email"></td>            
-        <td><Label> Phone Number</Label></td>
-                <td><input type="tel"></td>
+            <td>
+                <input type="text" id="id1" name="FirstName" required>
+            </td>
+            <td>
+                <input type="text" id="id2" name="LastName" required>
+            </td>
+
         </tr>
-         <br>   
-   <tr>
-    <td><input type="login" value="SUBMIT"></td>   <td><input type="clear" value="RESET"></td>
-   </tr>
+        <tr>
+            <td>
+                <label for="id3"> Birthday</label>
+            </td>
+            <td>
+                Gender
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" id="id3" name="Birthday" required>
+            </td>
+            <td>
+                <input type="radio" id="male" name="Gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="Female" name="Gender" value="female" >
+                 <label for="Female">FeMale</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id5">Email</label>
+            </td>
+            <td>
+                <label for="id6">Phone Number</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" name="email" id="id5" required placeholder="Abc01@gmail.com">
+            </td>
+            <td>
+                <input type="tel" name="PhoneNumber" id="id6" placeholder="+91xxxxxxxxx">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="id7">Subject</label>
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2"  >
+                
+                <select id="Subject" name="Subject" id="id7" style="width: 100%" required>
+                    <option value="Choose Options">Choose Options</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="MAths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Social">Social</option>
+                    <option value="None">None</option>
+
+                </select>
+                
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2">
+                    <input type="submit">
+            </td> 
+        </tr>
+
+     </Table>
+   </form>
 </body>
 </html>
